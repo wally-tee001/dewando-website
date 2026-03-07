@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services - DEWANDOW GLOBAL LIMITED</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h1>DEWANDOW</h1>
+      </div>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <ul id="nav-list">
+        <li><a href="wed.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="nav-login">Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="services" class="services-section">
+    <div class="services-header">
+      <h2>Our Services</h2>
+      <p>We deliver comprehensive solutions tailored to your business needs</p>
+    </div>
+
+    <div class="services">
+      <!-- Service 1: Consulting -->
+      <div class="service-box" data-service="consulting">
+        <div class="service-header">
+          <div class="service-icon-large">💼</div>
+          <h3>Consulting</h3>
+        </div>
+        <p class="service-description">
+          Professional strategic consulting tailored to your needs. We provide expert
+          advice on business strategy, operations, and organizational development to help
+          your company achieve its goals.
+        </p>
+        <div class="service-features">
+          <h4>Key Features:</h4>
+          <ul>
+            <li><span class="feature-icon">→</span> Strategic Business Planning</li>
+            <li><span class="feature-icon">→</span> Process Optimization</li>
+            <li><span class="feature-icon">→</span> Management Consulting</li>
+            <li><span class="feature-icon">→</span> Organizational Development</li>
+          </ul>
+        </div>
+        <button class="service-btn" onclick="toggleServiceDetails(this)">Learn More ▼</button>
+        <div class="service-details" style="display: none;">
+          <h5>What's Included:</h5>
+          <p>Our consulting services provide in-depth analysis, strategic recommendations, and implementation support to transform your business operations and achieve sustainable growth.</p>
+          <hr>
+          <a href="appointment.html" class="btn btn-small">Get Consultation</a>
+        </div>
+      </div>
+
+      <!-- Service 2: Civil Engineering -->
+      <div class="service-box" data-service="engineering">
+        <div class="service-header">
+          <div class="service-icon-large">🏗️</div>
+          <h3>Civil Engineering & Structural Consulting</h3>
+        </div>
+        <p class="service-description">
+          Reliable and efficient civil engineering services with a focus on sustainable
+          solutions. We specialize in structural design, project management, and construction
+          consulting for residential, commercial, and industrial projects.
+        </p>
+        <div class="service-features">
+          <h4>Key Features:</h4>
+          <ul>
+            <li><span class="feature-icon">→</span> Structural Design & Analysis</li>
+            <li><span class="feature-icon">→</span> Building Assessment</li>
+            <li><span class="feature-icon">→</span> Infrastructure Projects</li>
+            <li><span class="feature-icon">→</span> Construction Consultation</li>
+          </ul>
+        </div>
+        <button class="service-btn" onclick="toggleServiceDetails(this)">Learn More ▼</button>
+        <div class="service-details" style="display: none;">
+          <h5>What's Included:</h5>
+          <p>Our engineering team combines technical expertise with innovative design to deliver safe, sustainable, and cost-effective structural solutions for all project types.</p>
+          <hr>
+          <a href="appointment.html" class="btn btn-small">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <!-- Service 3: Project Management -->
+      <div class="service-box" data-service="management">
+        <div class="service-header">
+          <div class="service-icon-large">📊</div>
+          <h3>Project Management</h3>
+        </div>
+        <p class="service-description">
+          End-to-end project planning, execution, and delivery. Our experienced team
+          ensures projects are completed on time, within budget, and to the highest quality
+          standards.
+        </p>
+        <div class="service-features">
+          <h4>Key Features:</h4>
+          <ul>
+            <li><span class="feature-icon">→</span> Project Planning & Scheduling</li>
+            <li><span class="feature-icon">→</span> Resource Management</li>
+            <li><span class="feature-icon">→</span> Risk Management</li>
+            <li><span class="feature-icon">→</span> Quality Assurance</li>
+          </ul>
+        </div>
+        <button class="service-btn" onclick="toggleServiceDetails(this)">Learn More ▼</button>
+        <div class="service-details" style="display: none;">
+          <h5>What's Included:</h5>
+          <p>We manage every aspect of your project with meticulous attention to detail, ensuring timely delivery, budget compliance, and exceptional results throughout the entire project lifecycle.</p>
+          <hr>
+          <a href="appointment.html" class="btn btn-small">Start Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Comparison Table -->
+    <div class="services-comparison">
+      <h3>Service Comparison</h3>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Features</th>
+            <th>Consulting</th>
+            <th>Civil Engineering</th>
+            <th>Project Management</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Strategy Development</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Design & Planning</td>
+            <td>-</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Execution Support</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Quality Monitoring</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Post-Project Support</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cta-section">
+      <h3>Which service is right for you?</h3>
+      <p>Contact us for a free consultation and let's discuss your project needs</p>
+      <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 DEWANDOW GLOBAL LIMITED. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Appointment - DEWANDOW GLOBAL LIMITED</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h1>DEWANDOW</h1>
+      </div>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <ul id="nav-list">
+        <li><a href="wed.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="appointment" class="appointment-section">
+    <div class="appointment-header">
+      <h2>Book an Appointment</h2>
+      <p>Schedule a consultation with our experts</p>
+    </div>
+
+    <div class="appointment-container">
+      <div class="appointment-layout">
+        <div class="appointment-left">
+          <form id="appointment-form" class="appointment-form" novalidate>
+            <fieldset>
+              <legend>Personal Information</legend>
+              <div class="form-grid">
+                <div class="form-row">
+                  <label for="apt-name">Full Name</label>
+                  <input type="text" id="apt-name" name="name" placeholder="Enter your full name" required>
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                  <label for="apt-phone">Phone</label>
+                  <input type="tel" id="apt-phone" name="phone" placeholder="Enter your phone number" required>
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                  <label for="apt-email">Email</label>
+                  <input type="email" id="apt-email" name="email" placeholder="Enter your email" required>
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Appointment Details</legend>
+              <div class="form-grid">
+                <div class="form-row">
+                  <label for="apt-service">Service</label>
+                  <select id="apt-service" name="service" required>
+                    <option value="">-- Select a service --</option>
+                    <option value="Consulting">Consulting</option>
+                    <option value="Civil Engineering">Civil Engineering & Structural Consulting</option>
+                    <option value="Project Management">Project Management</option>
+                  </select>
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                  <label for="apt-date">Preferred Date</label>
+                  <input type="date" id="apt-date" name="date" required>
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                  <label for="apt-time">Preferred Time</label>
+                  <input type="time" id="apt-time" name="time" required>
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-row full-width">
+                <label for="apt-notes">Additional Notes</label>
+                <textarea id="apt-notes" name="notes" rows="4" placeholder="Tell us more about your project or needs..."></textarea>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Book Appointment</button>
+              <p id="apt-success" class="success-message" role="status" aria-live="polite">✓ Thank you — your appointment has been booked. We'll contact you shortly.</p>
+            </div>
+          </form>
+        </div>
+        <aside class="appointment-right">
+          <div class="contact-card">
+            <h3>📞 Need help booking?</h3>
+            <p>Call us at <strong>+234 08038207597</strong></p>
+            <p>Email: <strong>info@dewandowglobal.com</strong></p>
+            <p style="margin-top: 20px;"><strong>Office Hours:</strong><br>Mon–Fri: 9:00 AM – 5:00 PM<br>Sat: 10:00 AM – 2:00 PM</p>
+          </div>
+
+          <div class="info-card">
+            <h3>💡 Why choose us?</h3>
+            <ul style="text-align: left; margin-top: 15px;">
+              <li>✓ Expert consultants with 10+ years experience</li>
+              <li>✓ Quick response time (24 hours)</li>
+              <li>✓ Flexible scheduling options</li>
+              <li>✓ Professional & confidential service</li>
+            </ul>
+          </div>
+
+          <div class="map-card">
+            <h4>📍 Our Office</h4>
+            <iframe title="Office location" src="https://www.google.com/maps?q=Ojuelegba+Road+Lagos&output=embed" loading="lazy"></iframe>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 DEWANDOW GLOBAL LIMITED. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
